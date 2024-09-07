@@ -8,10 +8,10 @@
     "services:up": "docker compose -f infra/compose.yaml up -d",
     "services:stop": "docker compose -f infra/compose.yaml stop",
     "services:down": "docker compose -f infra/compose.yaml down",
-    "lint:check": "prettier --check .",
-    "lint:fix": "prettier --write .",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "lint:prettier:check": "prettier --check .",
+    "lint:prettier:fix": "prettier --write .",
+    "test": "docker compose -f infra/compose.yaml up -d && jest --runInBand --verbose",
+    "test:watch": "jest --runInBand --watch"
   },
   "author": "",
   "license": "MIT",
