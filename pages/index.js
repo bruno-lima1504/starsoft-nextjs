@@ -1,6 +1,7 @@
-import style from "./styles/index.module.scss";
-import Card from "../components/card";
 import Head from "next/head";
+import style from "./styles/index.module.scss";
+import Card from "../components/Card";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -8,7 +9,10 @@ export default function Home() {
       <Head>
         <title>Starsoft</title>
       </Head>
-      <div className="container"></div>
+      <Header />
+      <div className={style.container}>
+        <Card />
+      </div>
     </>
   );
 }
