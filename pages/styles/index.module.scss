@@ -1,9 +1,26 @@
 .container {
   max-width: 1455px;
-  height: 100vh;
   margin-left: 10%;
   margin-right: 10%;
   display: grid;
   gap: 25px 12px;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin-bottom: 190px;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centraliza o botão */
+  margin-bottom: 20px; /* Espaço abaixo do botão */
+
+  button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    width: 30%;
+    font-weight: 600;
+    cursor: pointer;
+  }
 }

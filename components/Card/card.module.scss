@@ -4,6 +4,9 @@
   width: 345px;
   max-height: 555px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   img {
     width: 100%;
