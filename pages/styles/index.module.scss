@@ -1,5 +1,9 @@
 .container {
-  width: 92%;
-  margin: 4rem auto;
+  max-width: 1455px;
   height: 100vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  gap: 25px 12px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
