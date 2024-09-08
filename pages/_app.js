@@ -1,7 +1,14 @@
-import "./styles/globals.scss"; // Importa o arquivo de estilos globais
+import { QueryClient, QueryClientProvider } from "react-query";
+import "./styles/globals.scss";
+
+const client = new QueryClient();
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <QueryClientProvider client={client}>
+      <Component {...pageProps} />
+    </QueryClientProvider>
+  );
 }
 
 export default MyApp;

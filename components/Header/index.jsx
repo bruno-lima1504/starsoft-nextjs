@@ -1,6 +1,4 @@
 import styles from "./header.module.scss";
-import { FiShoppingBag } from "react-icons/fi";
-import { RiShoppingBag2Line } from "react-icons/ri";
 import { AiOutlineShopping } from "react-icons/ai";
 
 export default function Header() {
