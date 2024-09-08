@@ -1,3 +1,14 @@
+import style from "./styles/index.module.scss";
+import Card from "../components/card";
+import Head from "next/head";
+
 export default function Home() {
-  return <h1>starsoft</h1>;
+  return (
+    <>
+      <Head>
+        <title>Starsoft</title>
+      </Head>
+      <div className="container"></div>
+    </>
+  );
 }
