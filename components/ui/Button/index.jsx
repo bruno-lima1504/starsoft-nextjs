@@ -1,5 +1,9 @@
 import style from "./button.module.scss";
 
-export default function Button({ title }) {
-  return <button className={style.button}>{title}</button>;
+export default function Button({ title, onClick }) {
+  return (
+    <button className={style.button} onClick={onClick}>
+      {title}
+    </button>
+  );
 }

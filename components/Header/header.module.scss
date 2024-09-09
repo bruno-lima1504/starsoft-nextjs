@@ -22,13 +22,22 @@
   align-items: center;
 
   button {
+    display: flex;
+    align-items: center;
     margin-left: 2rem;
     background: transparent;
     border: 0;
-    transition: transform 0.8s;
-
-    &:hover {
-      transform: scale(1.2);
+    svg {
+      width: 30px;
+      height: 30px;
     }
   }
+}
+
+.productCount {
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 20px;
+  margin-left: 8px;
+  font-weight: bold;
 }

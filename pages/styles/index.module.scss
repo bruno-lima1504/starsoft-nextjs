@@ -1,7 +1,6 @@
 .container {
   max-width: 1455px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 0 auto; /* Centraliza horizontalmente */
   display: grid;
   gap: 25px 12px;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
