@@ -23,6 +23,12 @@
   button {
     font-size: 1rem;
   }
+  @media (max-width: 625px) {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .cartHeader {
@@ -51,6 +57,10 @@
     width: 100%;
     text-align: center;
   }
+
+  @media (max-width: 625px) {
+    width: 100%;
+  }
 }
 
 .cartBody {
@@ -66,6 +76,10 @@
   margin-bottom: 50px;
   p {
     font-weight: 700;
+  }
+
+  @media (max-width: 625px) {
+    width: 100%;
   }
 }
 
