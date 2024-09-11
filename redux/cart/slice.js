@@ -14,7 +14,6 @@ export const cartSlice = createSlice({
         (product) => product.id === action.payload.id,
       );
       if (productIsAlreadyInCart) {
-        // Atualize a quantidade do produto no carrinho
         state.cart = state.cart.map((product) =>
           product.id === action.payload.id
             ? { ...product, quantity: product.quantity + 1 }
@@ -25,7 +24,6 @@ export const cartSlice = createSlice({
           0,
         );
       } else {
-        // Adicione o novo produto ao carrinho com a quantidade inicial 1
         state.cart.push({ ...action.payload, quantity: 1 });
       }
       state.totalPrice = state.cart.reduce(
